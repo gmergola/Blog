@@ -106,6 +106,7 @@
 }
 
 .new-user-form-container {
+  text-align: center;
   border: 2px solid lightslategrey;
   border-radius: 5px;
   padding: 10px;
@@ -133,6 +134,7 @@
 }
 
 .edit-user-form-container {
+  text-align: center;
   border: 2px solid lightslategrey;
   border-radius: 5px;
   padding: 10px;
@@ -191,6 +193,7 @@
 }
 
 .add-post-form-container {
+  text-align: center;
   border: 2px solid lightslategrey;
   border-radius: 5px;
   padding: 10px;
@@ -221,6 +224,7 @@
 }
 
 .edit-post-form-container {
+  text-align: center;
   border: 2px solid lightslategrey;
   border-radius: 5px;
   padding: 10px;
@@ -305,6 +309,7 @@
 }
 
 .add-tag-form-container {
+  text-align: center;
   border: 2px solid lightslategrey;
   border-radius: 5px;
   padding: 10px;
@@ -335,6 +340,7 @@
 }
 
 .edit-tag-form-container {
+  text-align: center;
   border: 2px solid lightslategrey;
   border-radius: 5px;
   padding: 10px;
