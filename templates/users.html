@@ -3,16 +3,17 @@
 {% block title %}Blog-User List{% endblock %}
 {% block style %} <link rel="stylesheet" href="/static/users.css">{% endblock %}
 {% block content %}
-<h1>User List</h1>
-<ul id="user-list-id">
+<h1 class="users-list-title">User List</h1>
+<a class="add-users-button btn btn-primary" href="/users/new">Add User</a>
+<div id="users-list-id">
   {% for user in users %}
-    <li>
-      <a href="/users/{{ user.id }}">
+    <div>
+      <a class="users-link" href="/users/{{ user.id }}">
+        <img class="users-img" src="{{user.image_url}}" alt="{{ user.first_name }}">
         {{ user.first_name }} {{ user.last_name }}
       </a>
-    </li>
+    </div>
   {% endfor %}
-</ul>
-
-<a class="btn btn-primary" href="/users/new">Add User</a>
+</div>
 {% endblock %}
+

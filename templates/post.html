@@ -3,11 +3,11 @@
 {% block title %}Blog-User List{% endblock %}
 
 {% block content %}
-<h1>{{ post.title }}</h1>
+<h1 class="post-title">{{ post.title }}</h1>
 
-<p>{{ post.content }}</p>
+<p class="post-content">{{ post.content }}</p>
 
-<p>By {{ user.first_name }} {{ user.last_name }}</p>
+<p><i>By {{ user.first_name }} {{ user.last_name }}</i></p>
 
 <span><b>Tags:</b></span>
 {% for tag in tags %}
@@ -18,9 +18,9 @@
 <br>
 
 <form action="/posts/{{ post.id }}/delete" method="POST">
-  <button class="btn btn-primary" formaction="/posts/{{ post.id }}/edit" formmethod="get">Edit</button>
-  <button class= "btn btn-primary">Delete</button>
-  <button class="btn btn-light" formaction="/users/{{ user.id }}" formmethod="get">Cancel</button>
+  <button class="post-button btn btn-primary" formaction="/posts/{{ post.id }}/edit" formmethod="get">Edit</button>
+  <button class= "post-button btn btn-primary">Delete</button>
+  <button class="post-button btn btn-light" formaction="/users/{{ user.id }}" formmethod="get">Cancel</button>
 </form>
 
 {% endblock %}

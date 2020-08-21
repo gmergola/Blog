@@ -27,6 +27,7 @@ def show_all_users():
     """ Show a list of all users. """
 
     users = User.query.all()
+    print(users)
 
     return render_template('/users.html',
                             users=users)
