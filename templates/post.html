@@ -18,9 +18,9 @@
 <br>
 
 <form action="/posts/{{ post.id }}/delete" method="POST">
-  <button class="post-button btn btn-primary" formaction="/posts/{{ post.id }}/edit" formmethod="get">Edit</button>
-  <button class= "post-button btn btn-primary">Delete</button>
-  <button class="post-button btn btn-light" formaction="/users/{{ user.id }}" formmethod="get">Cancel</button>
+  <button class="post-button btn btn-primary" formaction="/posts/{{ post.id }}/edit" formmethod="get">EDIT</button>
+  <button class= "post-button btn btn-primary">DELETE</button>
+  <button class="post-button btn btn-light" formaction="/users/{{ user.id }}" formmethod="get">CANCEL</button>
 </form>
 
 {% endblock %}

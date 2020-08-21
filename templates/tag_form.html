@@ -3,15 +3,15 @@
 {% block title %}Blog-Add New Tag{% endblock %}
 
 {% block content %}
-<h1>Create a Tag</h1>
-<form action="" method="POST">
+<h1 class="add-tag-form-title">Create a Tag</h1>
+<form class="add-tag-form-container" action="" method="POST">
   <p>
-    <label for="name">Name </label>
-    <input type="text" name="name" id="name" placeholder="Tag Name">
+    <label class="add-tag-form-label" for="name">Name </label>
+    <input class="add-tag-form-input" type="text" name="name" id="name" placeholder="Tag Name">
   </p>
 
-  <button class="btn btn-success">Add</button>
-  <button class="btn btn-light"
+  <button class="add-tag-form-button btn btn-primary">Add</button>
+  <button class="add-tag-form-button btn btn-light"
           formaction="/tags"
           formmethod="GET">Cancel</button>
 </form>

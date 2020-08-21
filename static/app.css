@@ -1,5 +1,5 @@
 .app-container {
-  margin-left: 5rem;
+  margin-left: 15%;
   margin-top: 100px;
   background-color: lightgray;
 }
@@ -22,9 +22,10 @@
 .users-list-title {
   display: inline-block;
   margin-bottom: 30px;
+  color: rgb(61, 63, 70);
 }
 .users-link {
-  border: 2px solid black;
+  border: 2px solid rgb(202, 202, 202);
   margin-top: 25px;
   display: block;
   width: 300px;
@@ -55,28 +56,35 @@
 
 /***************************** USER ********************************/
 
+.user-title {
+  color: rgb(61, 63, 70);
+}
+
 .user-img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
-  margin: 30px;
+  margin: 15px;
   display: block;
   border: 1px solid grey;
 }
 
 .user-button {
   display: inline;
-  margin: 20px;
+  margin: 10px;
 }
 
 .user-posts-title{
   margin: 20px;
+  color: rgb(61, 63, 70);
+  border-bottom: 3px solid lightslategrey;
+  width: 85%;
 }
 
 .user-posts {
   display: block;
   margin: 20px;
-  border: 1px solid grey;
+  border: 2px solid rgb(202, 202, 202);
   width: 300px;
   padding: 10px;
   border-radius: 20px;
@@ -90,19 +98,84 @@
   opacity: 0.5;
 }
 
+/***************************** NEW USER FORM ********************************/
+
+.new-user-form-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 30px;
+}
+
+.new-user-form-container {
+  border: 2px solid lightslategrey;
+  border-radius: 5px;
+  padding: 10px;
+  width: 85%;
+  background-color: rgb(228, 226, 226);
+}
+
+.new-user-label {
+  font-size: 23px;
+  color: rgb(83, 85, 92);
+  margin-left: 10px;
+}
+
+.new-user-input {
+  margin: 10px;
+  border-radius: 7px;
+  border: 2px solid lightslategrey;
+  height: 40px;
+}
+/***************************** EDIT USER FORM ********************************/
+
+.edit-user-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 30px;
+}
+
+.edit-user-form-container {
+  border: 2px solid lightslategrey;
+  border-radius: 5px;
+  padding: 10px;
+  width: 85%;
+  background-color: rgb(228, 226, 226);
+}
+
+.edit-user-form {
+  display: inline;
+}
+
+.edit-user-label {
+  font-size: 23px;
+  color: rgb(83, 85, 92);
+  margin-left: 10px;
+}
+
+.edit-user-input {
+  margin: 10px;
+  border-radius: 7px;
+  border: 2px solid lightslategrey;
+  height: 40px;
+}
+
+.edit-user-button {
+  display: inline;
+  margin: 10px;
+}
 /***************************** POST ********************************/
 
 .post-title {
-  margin-bottom: 20px;
-  width: 22rem;
+  margin-bottom: 50px;
+  width: 85%;
   border-bottom: 5px dotted lightslategrey;
+  padding-bottom: 10px;
+  color: rgb(61, 63, 70);
 }
 
 .post-content {
-  border: 2px solid grey;
+  border: 2px solid lightslategrey;
   border-radius: 5px;
   padding: 10px;
-  width: 350px;
+  width: 85%;
   background-color: rgb(228, 226, 226);
 }
 
@@ -110,18 +183,82 @@
   margin: 10px;
 }
 
+/***************************** ADD POST FORM ********************************/
+
+.add-post-form-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 30px;
+}
+
+.add-post-form-container {
+  border: 2px solid lightslategrey;
+  border-radius: 5px;
+  padding: 10px;
+  width: 85%;
+  background-color: rgb(228, 226, 226);
+}
+
+.add-post-form-label {
+  font-size: 23px;
+  color: rgb(83, 85, 92);
+  margin-left: 10px;
+}
+
+.add-post-form-input {
+  margin: 10px;
+  border-radius: 7px;
+  border: 2px solid lightslategrey;
+}
+
+.add-post-form-button {
+  margin: 10px;
+}
+
+/***************************** EDIT POST FORM ********************************/
+.edit-post-form-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 30px;
+}
+
+.edit-post-form-container {
+  border: 2px solid lightslategrey;
+  border-radius: 5px;
+  padding: 10px;
+  width: 85%;
+  background-color: rgb(228, 226, 226);
+}
+
+.edit-post-form-label {
+  font-size: 23px;
+  color: rgb(83, 85, 92);
+  margin-left: 10px;
+}
+
+.edit-post-form-input {
+  margin: 10px;
+  border-radius: 7px;
+  border: 2px solid lightslategrey;
+}
+
+.edit-post-form-button {
+  margin: 10px;
+}
 /***************************** TAGS ********************************/
+.tags-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 20px;
+}
 
 .tags-links-container {
   background-color: rgb(228, 226, 226);
   width: 90%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .tags-link {
   display: inline-block;
   margin: 7px;
-  background-color: rgb(121, 169, 241);
+  background-color: rgb(182, 123, 230);
   color: white;
   padding: 7px;
   border-radius: 5px;
@@ -132,3 +269,91 @@
   opacity: 0.5;
 }
 
+/***************************** TAG ********************************/
+
+.tag-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 40px;
+}
+
+.tag-posts {
+  display: block;
+  margin: 20px;
+  border: 2px solid rgb(202, 202, 202);
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+}
+
+.tag-posts:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.tag-button {
+  margin: 10px;
+}
+
+/***************************** ADD TAG FORM ********************************/
+
+.add-tag-form-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 30px;
+}
+
+.add-tag-form-container {
+  border: 2px solid lightslategrey;
+  border-radius: 5px;
+  padding: 10px;
+  width: 85%;
+  background-color: rgb(228, 226, 226);
+}
+
+.add-tag-form-label {
+  font-size: 23px;
+  color: rgb(83, 85, 92);
+  margin-left: 10px;
+}
+
+.add-tag-form-input {
+  margin: 10px;
+  border-radius: 7px;
+  border: 2px solid lightslategrey;
+}
+
+.add-tag-form-button {
+  margin: 10px;
+}
+/***************************** EDIT TAG FORM ********************************/
+
+.edit-tag-form-title {
+  color: rgb(61, 63, 70);
+  margin-bottom: 30px;
+}
+
+.edit-tag-form-container {
+  border: 2px solid lightslategrey;
+  border-radius: 5px;
+  padding: 10px;
+  width: 85%;
+  background-color: rgb(228, 226, 226);
+}
+
+.edit-tag-form-label {
+  font-size: 23px;
+  color: rgb(83, 85, 92);
+  margin-left: 10px;
+}
+
+.edit-tag-form-input {
+  margin: 10px;
+  border-radius: 7px;
+  border: 2px solid lightslategrey;
+}
+
+.edit-tag-form-button {
+  margin: 10px;
+}

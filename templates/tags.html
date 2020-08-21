@@ -3,7 +3,7 @@
 {% block title %}Blog-Tag List{% endblock %}
 
 {% block content %}
-<h1>Tag List</h1>
+<h1 class="tags-title">Tag List</h1>
 <div class="tags-links-container" id="tag-list-id">
   {% for tag in tags %}
   <a class="tags-link" href="/tags/{{ tag.id }}">
@@ -12,5 +12,5 @@
   {% endfor %}
 </div>
 
-<a class="btn btn-primary" href="/tags/new">Add Tag</a>
+<a class="btn btn-primary" href="/tags/new">ADD TAG</a>
 {% endblock %}

@@ -3,20 +3,20 @@
 {% block title %}Blog-Add New User{% endblock %}
 
 {% block content %}
-<h1>Create a user</h1>
-<form action="" method="POST">
+<h1 class="new-user-form-title">Add A User</h1>
+<form class="new-user-form-container" action="" method="POST">
   <p>
-    <label for="first_name">First Name: </label>
-    <input type="text" name="first_name" id="first_name">
+    <label class="new-user-label" for="first_name">First Name: </label>
+    <input class="new-user-input" type="text" name="first_name" id="first_name">
   </p>
   <p>
-    <label for="last_name">Last Name: </label>
-    <input type="text" name="last_name" id="last_name">
+    <label class="new-user-label" for="last_name">Last Name: </label>
+    <input class="new-user-input" type="text" name="last_name" id="last_name">
   </p>
   <p>
-    <label for="image_url">Profile Image URL: </label>
-    <input type="text" name="image_url" id="image_url">
+    <label class="new-user-label" for="image_url">Profile Image URL: </label>
+    <input class="new-user-input" type="text" name="image_url" id="image_url">
   </p>
-  <button class="btn btn-success">Create User</button>
+  <button class="btn btn-primary">ADD USER</button>
 </form>
 {% endblock %}

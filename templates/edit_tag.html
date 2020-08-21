@@ -4,15 +4,15 @@
 
 {% block content %}
 
-<h1>Edit a Tag</h1>
-<form method="POST">
+<h1 class="edit-tag-form-title">Edit a Tag</h1>
+<form class="edit-tag-form-container" method="POST">
   <p>
-    <label for="name">Name </label>
-    <input type="text" name="name" id="name" value="{{ tag.name }}">
+    <label class="edit-tag-form-label" for="name">Name </label>
+    <input class="edit-tag-form-input" type="text" name="name" id="name" value="{{ tag.name }}">
   </p>
 
-  <button class="btn btn-primary">Edit</button>
-  <button class="btn btn-light"
+  <button class="add-tag-form-button btn btn-primary">Edit</button>
+  <button class="add-tag-form-button btn btn-light"
           formaction="/tags/{{ tag.id }}"
           formmethod="get">Cancel</button>
 </form>

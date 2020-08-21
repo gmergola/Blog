@@ -3,20 +3,24 @@
 {% block title %}Blog-Edit User{% endblock %}
 
 {% block content %}
-<form method="POST">
-  <p>
-    <label for="first_name">First Name </label>
-    <input type="text" name="first_name" id="first_name" value="{{ user.first_name }}">
-  </p>
-  <p>
-    <label for="last_name">Last Name: </label>
-    <input type="text" name="last_name" id="last_name" value="{{ user.last_name }}">
-  </p>
-  <p>
-    <label for="image_url">Profile Image URL: </label>
-    <input type="text" name="image_url" id="image_url" value="{{ user.image_url if user.image_url else '/static/default.png' }}">
-  </p>
-  <button class="btn btn-primary" >Save</button>
-</form>
-<a class="btn btn-light" href="/users/{{ user.id }}">Cancel</a>
+<h2 class="edit-user-title">Edit {{ user.first_name }} </h2>
+<div class="edit-user-form-container">
+  <form class="edit-user-form" method="POST">
+    <p>
+      <label class="edit-user-label" for="first_name">First Name </label>
+      <input class="edit-user-input" type="text" name="first_name" id="first_name" value="{{ user.first_name }}">
+    </p>
+    <p>
+      <label class="edit-user-label" for="last_name">Last Name: </label>
+      <input class="edit-user-input" type="text" name="last_name" id="last_name" value="{{ user.last_name }}">
+    </p>
+    <p>
+      <label class="edit-user-label" for="image_url">Profile Image URL: </label>
+      <input class="edit-user-input" type="text" name="image_url" id="image_url"
+        value="{{ user.image_url if user.image_url else '/static/default.png' }}">
+    </p>
+    <button class="edit-user-button btn btn-primary">SAVE</button>
+  </form>
+  <a class="edit-user-button btn btn-light" href="/users/{{ user.id }}">CANCEL</a>
+</div>
 {% endblock %}

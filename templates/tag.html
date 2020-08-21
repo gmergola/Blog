@@ -3,19 +3,19 @@
 {% block title %}Blog-{{ tag.name }}{% endblock %}
 
 {% block content %}
-<h1>{{ tag.name }}</h1>
+<h1 class="tag-title">{{ tag.name }} tag</h1>
 
-<ul>
+<div>
   {% for post in tag.posts %}
-    <li>
-      <a href="/posts/{{ post.id }}">{{ post.title }}</a>
-    </li>
+    <div>
+      <a class="tag-posts" href="/posts/{{ post.id }}">{{ post.title }}</a>
+    </div>
   {% endfor %}
-</ul>
+</div>
 
 <form action="/tags/{{ tag.id }}/delete" method="POST">
-  <button class="btn btn-primary" formaction="/tags/{{ tag.id }}/edit" formmethod="get">Edit</button>
-  <button class= "btn btn-danger">Delete</button>
+  <button class="tag-button btn btn-primary" formaction="/tags/{{ tag.id }}/edit" formmethod="get">EDIT</button>
+  <button class= "tag-button btn btn-danger">DELETE</button>
 </form>
 
 {% endblock %}

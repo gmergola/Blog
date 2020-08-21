@@ -3,28 +3,29 @@
 {% block title %}Blog-Add New Post{% endblock %}
 
 {% block content %}
-<h1>Add Post for {{ user.first_name }} {{ user.last_name }}</h1>
-<form action="" method="POST">
+<h1 class="add-post-form-title">Add Post for {{ user.first_name }} {{ user.last_name }}</h1>
+<form class="add-post-form-container" action="" method="POST">
   <p>
-    <label for="title">Title </label>
-    <input type="text" name="title" id="title">
+    <label class="add-post-form-label" for="title">Title </label>
+    <input class="add-post-form-input" type="text" name="title" id="title">
   </p>
   <p>
-    <label for="content">Content</label>
-    <textarea name="content" id="content" cols="30" rows="3"></textarea>
+    <label class="add-post-form-label" for="content">Content</label>
+    <textarea class="add-post-form-input" name="content" id="content" cols="30" rows="3"></textarea>
   </p>
 
+  <h3 class="add-post-form-title">Tags</h3>
   {% for tag in tags %}
     <div>
-      <input type="checkbox" name="tags" id="{{ tag.name }}" value="{{ tag.name }}">
-      <label for="{{ tag.name }}">{{ tag.name }}</label>
+      <input class="add-post-form-input" type="checkbox" name="tags" id="{{ tag.name }}" value="{{ tag.name }}">
+      <label class="add-post-form-label" for="{{ tag.name }}">{{ tag.name }}</label>
     </div>
   {% endfor %}
 
   <br>
 
-  <button class="btn btn-primary">Add</button>
-  <button class="btn btn-light"
+  <button class="add-post-form-button btn btn-primary">Add</button>
+  <button class="add-post-form-button btn btn-light"
           formaction="/users/{{ user.id }}"
           formmethod="GET">Cancel</button>
 </form>
