@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog-User List{% endblock %}
+
+{% block content %}
+<h1>{{ user.first_name }} {{ user.last_name }}</h1>
+<img src="{{ user.image_url }}" alt="{{ user.first_name }}">
+<br>
+<a class="btn btn-primary" href="/users/{{ user.id }}/edit">EDIT</a>
+<br>
+<br>
+<form action="/users/{{ user.id }}/delete" method="POST">
+  <button class= "btn btn-danger">Delete</button>
+</form>
+<br>
+
+<ul id="post-list">
+  {% for post in user.posts %}
+  <li><a href="/posts/{{ post.id }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+<form>
+  <button class="btn btn-primary" formmethod="get" formaction="/users/{{ user.id }}/posts/new">Add Post</button>
+</form>
+{% endblock %}
