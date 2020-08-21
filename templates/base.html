@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}Blog{% endblock %}</title>
-  <link rel="stylesheet"
-    href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/app.css">
 </head>
 
-<body>
-  <div class="container">
-    {% block content %} {% endblock %}
+<body class="app-container">
+  <div class="fixed-top">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <a class="pages" href="/users">Blog</a>
+        <div class="text-white h4">•</div>
+        <a class="pages" href="/tags">Tags</a>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+  {% block content %} {% endblock %}
   </div>
   <script src="https://unpkg.com/jquery"></script>
   <script src="https://unpkg.com/bootstrap"></script>

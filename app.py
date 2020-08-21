@@ -35,7 +35,7 @@ def show_all_users():
 def show_form():
     """ Show form to create user. """
 
-    return render_template('/form.html')
+    return render_template('/new_user_form.html')
 
 @app.route('/users/new', methods=['POST'])
 def create_user():
@@ -67,7 +67,7 @@ def show_edit_form(user_id):
     """ show user edit form """
     user = User.query.get_or_404(user_id)
 
-    return render_template('/edit.html',
+    return render_template('/edit_user.html',
                             user=user)
 
 @app.route('/users/<int:user_id>/edit', methods=['POST'])
